@@ -3,6 +3,7 @@ from flask import Flask, request
 # Create your app (web server)
 app = Flask(__name__)
 
+x= 1
 
 # When people visit the home page '/' use the hello_world function
 @app.route('/')
