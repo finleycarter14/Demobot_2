@@ -10,14 +10,14 @@ x= 1
 def hello_world():
     return 'Hello, World!'
 
-@app.route('/fin-demobot', methods=['GET','POST'])
+@app.route('/greet', methods=['GET','POST'])
 def greet_person():
     # Get the value of the 'name' query parameter
     # request.values is a dictionary (cool!)
-    print ('greeting')
     name = request.values.get('text')
     # This bot says hi to every name it gets sent!
-    return f'hi {name}!'
+    if name == "James":
+        return f'hi {name}!'
 
 
 if __name__ == '__main__':
