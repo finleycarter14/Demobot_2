@@ -10,7 +10,7 @@ x= 1
 def hello_world():
     return 'Hello, World!'
 
-@app.route('/greet', methods=['GET','POST'])
+@app.route('/text', methods=['GET','POST'])
 def greet_person():
     # Get the value of the 'name' query parameter
     # request.values is a dictionary (cool!)
