@@ -9,7 +9,7 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello, World!'
 
-@app.route('/greet')
+@app.route('/greet', methods=['GET','POST'])
 def greet_person():
     # Get the value of the 'name' query parameter
     # request.values is a dictionary (cool!)
