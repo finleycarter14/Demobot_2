@@ -16,8 +16,7 @@ def greet_person():
     # request.values is a dictionary (cool!)
     name = request.values.get('text')
     # This bot says hi to every name it gets sent!
-    if name == "James":
-        return f'hi {name}!'
+    return f'hi {name}!'
 
 
 if __name__ == '__main__':
